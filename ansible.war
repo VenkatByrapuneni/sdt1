@@ -1,0 +1,24 @@
+
+---> To stop mechine automatically 
+          curl  https://raw.githubusercontent.com/devops2k18/DevOpsDecember/master/vminit.sh | sudo bash
+
+------>  ansible is a YAML language {yet another markup language}
+            json , xml
+
+----> To see the os details
+          
+
+---> To create the keys{pub&pem}
+          " mkdir keys-2021{key name}"
+            "ssh-keygen -f sai{key name}"
+  
+----> To see the ansible location 
+          " which ansible"
+
+----> To copy the ansible to my directory
+            " cp /etc/ansible . -r
+---> To see hostname and pwd
+       " env | grep -i ansible "
+             
+
+          ansible -i inventory test --user venkate --private-key=privatekey.pem -m ping 
